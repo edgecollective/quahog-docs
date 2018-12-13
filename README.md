@@ -1,6 +1,8 @@
 # Quahog Quaick Start
 
-## Setting up File Transfer Capability (using 'ampy')
+## Transferring Files to Quahog
+
+### Setting up ampy
 
 Install virtualenv
 
