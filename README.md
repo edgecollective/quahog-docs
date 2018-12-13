@@ -14,19 +14,27 @@ apt-get install virtualenv
 
 Create a virtualenv
 
-> virtualenv venv
+``` 
+virtualenv venv
+``` 
 
 Activate it
 
-> source venv/bin/activate
+``` 
+source venv/bin/activate
+``` 
 
 Install ampy in virtualenv
 
-> pip install adafruit-ampy
+``` 
+pip install adafruit-ampy
+``` 
 
 Check which USB port you've got your Quahog on (in most cases, this will be /dev/ttyUSB0).
 
-> ls /dev/ttyUSB*
+``` 
+ls /dev/ttyUSB*
+``` 
 
 ### Using Ampy
 
@@ -34,38 +42,54 @@ Check which USB port you've got your Quahog on (in most cases, this will be /dev
 
 - Listing files on the Quahog
 
-> ampy -p /dev/ttyUSB0 ls
+``` 
+ampy -p /dev/ttyUSB0 ls
+``` 
 
 - Putting a file on the Quahog
 
-> ampy -p /dev/ttyUSB) put ./foo.py
+``` 
+ampy -p /dev/ttyUSB) put ./foo.py
+``` 
 
 - Getting a file from the Quahog
 
-> ampy -p /dev/ttyUSB0 get foo.py
+``` 
+ampy -p /dev/ttyUSB0 get foo.py
+``` 
 
 - Getting a file from the Quahog and piping it into a local file
 
-> ampy -p /dev/ttyUSB0 get foo.py > ./myfoo.py
+``` 
+ampy -p /dev/ttyUSB0 get foo.py > ./myfoo.py
+``` 
 
 ## Connecting to the Quahog REPL
 
 Install screen
 
-> apt-get install screen
+``` 
+apt-get install screen
+``` 
 
 Connect to Quahog. (Note: in the following, you may need to use 'sudo'; I believe that the latest versions of Ubuntu require this.)
 
+``` 
 screen /dev/ttyUSB0 115200 
+``` 
 
 You should see a REPL prompt
 
-> >>>
+``` 
+>>>
+``` 
 
 You can now use the Python REPL.  For example, to list files on the device:
 
-> >>> import os
-> >>> os.listdir()
+``` 
+>>> import os
+>>> os.listdir()
+``` 
 
 To exit 'screen', type:  Ctrl-a \
 
