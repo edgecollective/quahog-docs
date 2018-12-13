@@ -101,7 +101,7 @@ As an example, we'll use a script located in this repository:
 farmos/farmos_post_dht22.py
 ```
 
-1. Modify farmos_post_dht22.py so that it uses your FarmOS publickey and private key, as well as your wifi credentials.
+First, modify farmos_post_dht22.py so that it uses your FarmOS publickey and private key, as well as your wifi credentials.
 
 ```
 # set up FARMOS params
@@ -114,20 +114,20 @@ WIFI_PASSWORD = '[PASSWORD]'
 
 ```
 
-2. Upload the script to your Quahog
+Now, upload the script to your Quahog
 
 ``` 
 ampy -p /dev/ttyUSB0 put farmos_post_dht22.py
 ```
 
-Now we can 'screen' into the Quahog and run the script:
+Now we can 'screen' into the Quahog, and run our script to post values to FarmOS
 
 ``` 
 screen /dev/ttyUSB0 115200
 >>> import farmos_post_dht22
 ```
 
-Note: if you would like this script to run on Quahog startup, copy it into a file called 'main.py', and put this on your board using ampy.
+Note: if you would like this script to run automatically when the Quahog first powers on, copy it into a file called 'main.py', and put this on your board using ampy.
 
 
 
