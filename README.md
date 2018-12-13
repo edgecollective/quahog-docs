@@ -1,4 +1,4 @@
-# Quaick-and-dirty Quahog Onramp
+# Quick Quahog Qualification
 
 The below documentation assumes a (recent?) verison of Ubuntu.
 
