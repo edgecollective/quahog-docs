@@ -1,4 +1,4 @@
-# Quahog, Real Quaickly ...
+# Quaick-and-dirty Quahog Onramp
 
 On Ubuntu:
 
