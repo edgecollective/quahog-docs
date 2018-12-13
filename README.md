@@ -1,6 +1,6 @@
 # Quaick-and-dirty Quahog Onramp
 
-On Ubuntu:
+The below documentation assumes a (recent?) verison of Ubuntu.
 
 ## Transferring Files to/from Quahog
 
