@@ -58,7 +58,12 @@ You should see a REPL prompt
 
 > >>>
 
-To exit 'screen':  Ctrl-a \
+You can now use the Python REPL.  For example, to list files on the device:
+
+> >>> import os
+> >>> os.listdir()
+
+To exit 'screen', type:  Ctrl-a \
 
 
 
