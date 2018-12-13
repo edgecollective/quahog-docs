@@ -103,7 +103,8 @@ First, modify farmos_post_dht22.py to use your FarmOS publickey and private key.
 
 Then, upload the script to your Quahog
 
-``` ampy -p /dev/ttyUSB0 put farmos_post_dht22.py
+``` 
+ampy -p /dev/ttyUSB0 put farmos_post_dht22.py
 ```
 
 Now we can 'screen' into the Quahog and run the script:
