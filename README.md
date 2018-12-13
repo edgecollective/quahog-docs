@@ -4,7 +4,7 @@ On Ubuntu:
 
 ## Transferring Files to/from Quahog
 
-### Setting up ampy
+### Setting up ampy (file transfer utility)
 
 Install virtualenv
 
@@ -36,7 +36,7 @@ Check which USB port you've got your Quahog on (in most cases, this will be /dev
 ls /dev/ttyUSB*
 ``` 
 
-### Using Ampy
+### Using ampy to transfer files
 
 (Note: in the following, you may need to use 'sudo'; I believe that the latest versions of Ubuntu require this.)
 
@@ -64,7 +64,7 @@ ampy -p /dev/ttyUSB0 get foo.py
 ampy -p /dev/ttyUSB0 get foo.py > ./myfoo.py
 ``` 
 
-## Connecting to the Quahog REPL
+## Connecting to the Micropython REPL
 
 Install screen
 
@@ -92,6 +92,31 @@ You can now use the Python REPL.  For example, to list files on the device:
 ``` 
 
 To exit 'screen', type:  Ctrl-a \
+
+## Using the Quahog with FarmOS
+
+This repo has a python script, located in the 'farmos/' directory, called 'farmos_post_dht22.py'. 
+
+Below, we'll use this file to post DHT22 sensor temp and humidity values to FarmOS.
+
+First, modify farmos_post_dht22.py to use your FarmOS publickey and private key.  Also, add your wifi credentials.
+
+Then, upload the script to your Quahog
+
+``` ampy -p /dev/ttyUSB0 put farmos_post_dht22.py
+```
+
+Now we can 'screen' into the Quahog and run the script:
+
+``` 
+screen /dev/ttyUSB0 115200
+>>> import farmos_post_dht22
+```
+
+Note: if you would like this script to run on Quahog startup, copy it into a file called 'main.py', and put this on your board using ampy.
+
+
+
 
 
 
