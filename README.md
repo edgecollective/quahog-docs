@@ -1,12 +1,15 @@
 # Quahog Quaick Start
 
+On Ubuntu:
+
 ## Transferring Files to/from Quahog
 
 ### Setting up ampy
 
 Install virtualenv
 
-` apt-get install virtualenv
+``` apt-get install virtualenv
+```
 
 Create a virtualenv
 
