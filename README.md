@@ -91,7 +91,7 @@ You can now use the Python REPL.  For example, to list files on the device:
 >>> os.listdir()
 ``` 
 
-To exit 'screen', type:  Ctrl-a \
+To exit 'screen', type:  [Ctrl-a] '\'
 
 ## Using the Quahog with FarmOS
 
@@ -111,7 +111,6 @@ private_key='[PRIVATE KEY]'
 # set up WIFI parameters
 WIFI_NET = '[ESSID]'
 WIFI_PASSWORD = '[PASSWORD]'
-
 ```
 
 Now, upload the script to your Quahog
