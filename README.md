@@ -1,4 +1,4 @@
-# Quahog Quaick Start
+# Quahog, Real Quaickly ...
 
 On Ubuntu:
 
@@ -91,7 +91,8 @@ You can now use the Python REPL.  For example, to list files on the device:
 >>> os.listdir()
 ``` 
 
-To exit 'screen', type:  [Ctrl-a] \ ("Control-A forward slash")
+To exit 'screen', type:  [Ctrl-a] \
+
 
 ## Using the Quahog with FarmOS
 
