@@ -95,13 +95,26 @@ To exit 'screen', type:  Ctrl-a \
 
 ## Using the Quahog with FarmOS
 
-This repo has a python script, located in the 'farmos/' directory, called 'farmos_post_dht22.py'. 
+As an example, we'll use a script located in this repository:  
 
-Below, we'll use this file to post DHT22 sensor temp and humidity values to FarmOS.
+```
+farmos/farmos_post_dht22.py
+```
 
-First, modify farmos_post_dht22.py to use your FarmOS publickey and private key.  Also, add your wifi credentials.
+1. Modify farmos_post_dht22.py so that it uses your FarmOS publickey and private key, as well as your wifi credentials.
 
-Then, upload the script to your Quahog
+```
+# set up FARMOS params
+public_key='[PUBLIC KEY]'
+private_key='[PRIVATE KEY]'
+
+# set up WIFI parameters
+WIFI_NET = '[ESSID]'
+WIFI_PASSWORD = '[PASSWORD]'
+
+```
+
+2. Upload the script to your Quahog
 
 ``` 
 ampy -p /dev/ttyUSB0 put farmos_post_dht22.py
