@@ -8,7 +8,8 @@ On Ubuntu:
 
 Install virtualenv
 
-``` apt-get install virtualenv
+``` 
+apt-get install virtualenv
 ```
 
 Create a virtualenv
